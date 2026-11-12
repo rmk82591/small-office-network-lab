@@ -263,15 +263,13 @@ For each one, I broke the network on purpose, wrote down the symptom as a help d
 - The management path runs over a VirtualBox host-only network, which is not what a production out-of-band network looks like.
 - Nested virtualization was unstable on my hardware, as described above.
 
-Ideas for later, not done: moving my Active Directory server into the Servers zone, and capturing VLAN-tagged traffic with Wireshark.
-
 ## Not in this repo
 
 - GNS3 project files and VM disks, which are large
 - The OPNsense configuration backup, because it contains password hashes and keys
 
-## Related projects
+## Next ideas
 
-- [Secure static website on AWS](https://github.com/rmk82591/aws-secure-static-website)
-- [Active Directory home lab](https://github.com/rmk82591/AD-home-lab)
-- [Help Desk in a Box (osTicket)](https://github.com/rmk82591/helpdesk-in-a-box)
+- Put a real server in the Servers zone, such as my Active Directory server or a simple web server, and test application traffic instead of only ping
+- Capture traffic on the trunk with Wireshark to see the VLAN tags
+- Add IPv6 addressing and matching firewall rules
